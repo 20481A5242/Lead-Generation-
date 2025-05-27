@@ -24,7 +24,7 @@ app.post('/submit-lead', async (req, res) => {
     // Send the data to n8n webhook (replace with your actual URL)
     // IMPORTANT: Make sure 'company' and 'message' are included in your frontend if you expect them here.
     // If not, remove them from the n8n payload.
-    await axios.post('https://accountname.app.n8n.cloud/webhook-test/fc95109c-a594-4d42-bf00-c357ba2a5294', {
+    await axios.post('https://accountname.app.n8n.cloud/webhook/fc95109c-a594-4d42-bf00-c357ba2a5294', {
       name,
       email
     });
